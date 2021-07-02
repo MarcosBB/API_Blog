@@ -8,7 +8,6 @@ class Publicacao(models.Model):
     descricao = models.TextField('Descrição', max_length=200)
     autor = models.ForeignKey('Autores.Autor', verbose_name='Autor', on_delete=models.CASCADE)
     criado = models.DateField('Criação', auto_now_add=True)
-    modificado = models.DateField('Atualização', auto_now=True)
     
     class Meta:
         verbose_name = 'Publicação'

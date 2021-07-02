@@ -18,16 +18,13 @@ from django.urls import path, include
 
 from rest_framework import routers
 from Autores.api import viewsets as autoresviewsets
-from Publicacoes.api import viewsets as publicacoesviewsets
+from Publicacoes.api.viewsets import PublicacaoViewSet as publicacoesviewsets
 
 route= routers.DefaultRouter()
 
 route.register(r'autores', autoresviewsets.AutorViewSet, basename="Autores")
-route.register(r'publicacoes', publicacoesviewsets.PublicacaoViewSet , basename="Publicacoes")
 
-
-
-
+route.register(r'publicacoes', publicacoesviewsets , basename="Publicacoes")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
