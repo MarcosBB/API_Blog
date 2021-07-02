@@ -17,15 +17,38 @@ Teste a API clickando [aqui]().
 
 ## Rotas 
 ### Autores GET, POST
+Rota para listagem de autores
 ```
 /autores/
 ``` 
+Exemplo de cadastro de autores:
+
+```
+{
+    "nome": "Marcos",
+    "sobrenome": "Beraldo Barros"
+}
+``` 
+
 ### Publicações GET, POST
+Rota para listagem de publicações
 ```
 /publicacoes/
 ``` 
+Exemplo de cadastro de publicações:
+```
+{
+    "titulo": "Política",
+    "descricao": "Bolsonaro vs Lula",
+    "autor": "922c26dd-88f1-493e-bbff-ace3308f8aea"
+}
+``` 
+Lembrando que no campo autor deve-se colocar o id do autor e não seu nome.
+
 #### Filtrando publicações por autores
-Insira após o `serch=` o nome, sobrenome ou id do autor que deseja filtrar as postagens.
+Insira após o `?serch=` o nome, sobrenome ou id do autor que deseja filtrar as postagens.
+Exemplo:
+
 ```
 /publicacoes?search=Marcos
 ``` 
