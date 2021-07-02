@@ -54,7 +54,7 @@ Exemplo:
 ``` 
 
 ## Rodando localmente
-Você deve criar um arquivo com nome `.env` contendo as informações de configurações do django e banco de dados.
+Você deve criar um arquivo na raiz do projeto com nome `.env` contendo as informações de configurações do django e banco de dados.
 Use este modelo e insira as informações à direita dos `=` sem adicionar nenhum espaço:
 
 ```
