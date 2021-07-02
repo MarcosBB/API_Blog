@@ -2,7 +2,7 @@
  
 É uma `API Rest` feita em `Python` com o framework `Django` e `djangorestframework` que tem o propósito de cadastro e consulta de informações de postagens e autores de um blog.
 
-Teste a API clickando [aqui]().
+Teste a API clickando [aqui](https://api-blog-marcosbb.herokuapp.com/).
 (Lembrando que a primeira requisição demora um pouco pra responder, ja que está hospedado no Heroku gratuitamente)
 
 ## Sumário
